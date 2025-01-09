@@ -1,0 +1,23 @@
+name = "prisma-clerk-test"
+main = "src/index.ts"
+compatibility_date = "2024-01-09"
+
+# Add this section for better compatibility
+compatibility_flags = [
+  "nodejs_compat"
+]
+
+# Your environment variables
+[vars]
+DATABASE_URL="postgresql://cloudflare-neon_owner:7qunJEhb5AVY@ep-bitter-shadow-a56u4hs2-pooler.us-east-2.aws.neon.tech/cloudflare-neon?sslmode=require"
+DIRECT_URL = "postgres://[your-direct-connection-string]?connect_timeout=10"
+CLERK_SECRET_KEY="sk_test_QYrWrHlC2SIBuVX0xGAZ9n9pZm8ZXGXYxABSgIzOdK"
+
+# Add this to allow Prisma to work in the Worker environment
+[build]
+command = "npm run build"
+watch_dir = "src"
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
