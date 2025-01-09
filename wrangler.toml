@@ -9,9 +9,9 @@ compatibility_flags = [
 
 # Your environment variables
 [vars]
-DATABASE_URL="postgresql://cloudflare-neon_owner:7qunJEhb5AVY@ep-bitter-shadow-a56u4hs2-pooler.us-east-2.aws.neon.tech/cloudflare-neon?sslmode=require"
-DIRECT_URL = "postgres://[your-direct-connection-string]?connect_timeout=10"
-CLERK_SECRET_KEY="sk_test_QYrWrHlC2SIBuVX0xGAZ9n9pZm8ZXGXYxABSgIzOdK"
+DATABASE_URL=""
+DIRECT_URL = ""
+CLERK_SECRET_KEY=""
 
 # Add this to allow Prisma to work in the Worker environment
 [build]
